@@ -1,0 +1,78 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-336152"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Sand Springs",
+                        "country": "USA",
+                        "line": [
+                            "66 Ridge St"
+                        ],
+                        "postalCode": "74063",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1997-11-16",
+                "gender": "female",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-564297"
+                    }
+                ],
+                "id": "smart-336152",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-336152"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Diaz",
+                        "given": [
+                            "Mary",
+                            "H"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "800-292-2133"
+                    },
+                    {
+                        "system": "email",
+                        "value": "mary.diaz@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mary Diaz</div>",
+                    "status": "generated"
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

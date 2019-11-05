@@ -1,0 +1,78 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-251407"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Bixby",
+                        "country": "USA",
+                        "line": [
+                            "60 Church Ave"
+                        ],
+                        "postalCode": "74008",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1980-05-28",
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-307451"
+                    }
+                ],
+                "id": "smart-251407",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-251407"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Long",
+                        "given": [
+                            "Eric",
+                            "N"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-816-6322"
+                    },
+                    {
+                        "system": "email",
+                        "value": "eric.long@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Eric Long</div>",
+                    "status": "generated"
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

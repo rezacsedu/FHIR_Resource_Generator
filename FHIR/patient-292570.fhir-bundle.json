@@ -1,0 +1,73 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-292570"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Broken Arrow",
+                        "country": "USA",
+                        "line": [
+                            "100 River St"
+                        ],
+                        "postalCode": "74014",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1969-06-02",
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-320318"
+                    }
+                ],
+                "id": "smart-292570",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-292570"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Barnes",
+                        "given": [
+                            "Thomas",
+                            "U"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "thomas.barnes@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Thomas Barnes</div>",
+                    "status": "generated"
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

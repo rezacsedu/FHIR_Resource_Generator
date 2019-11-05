@@ -1,0 +1,78 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-141677"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Broken Arrow",
+                        "country": "USA",
+                        "line": [
+                            "33 North Ave"
+                        ],
+                        "postalCode": "74014",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1995-08-19",
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-54176"
+                    }
+                ],
+                "id": "smart-141677",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-141677"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Taylor",
+                        "given": [
+                            "Jason",
+                            "K"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "800-507-7856"
+                    },
+                    {
+                        "system": "email",
+                        "value": "jason.taylor@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Jason Taylor</div>",
+                    "status": "generated"
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

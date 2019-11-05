@@ -1,0 +1,137 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-193088"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Bixby",
+                        "country": "USA",
+                        "line": [
+                            "88 River Ave"
+                        ],
+                        "postalCode": "74008",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "2002-02-12",
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-89469"
+                    }
+                ],
+                "id": "smart-193088",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-193088"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Reed",
+                        "given": [
+                            "David",
+                            "V"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-374-4975"
+                    },
+                    {
+                        "system": "email",
+                        "value": "david.reed@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">David Reed</div>",
+                    "status": "generated"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-193088-gestage"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "exam",
+                                "display": "Exam",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
+                        "text": "Exam"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "18185-9",
+                            "display": "Gestational age at birth",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "effectiveDateTime": "2002-02-12",
+                "id": "smart-193088-gestage",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-193088-gestage"
+                    }
+                ],
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-89469"
+                    }
+                ],
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-193088"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2002-02-12: Gestational age at birth = 42.2 weeks</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "wk",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "weeks",
+                    "value": 42.2
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

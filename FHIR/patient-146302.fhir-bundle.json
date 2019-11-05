@@ -1,0 +1,78 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-146302"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Bixby",
+                        "country": "USA",
+                        "line": [
+                            "52 Ridge Rd"
+                        ],
+                        "postalCode": "74008",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1973-12-11",
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-372629"
+                    }
+                ],
+                "id": "smart-146302",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-146302"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Gibson",
+                        "given": [
+                            "Kevin",
+                            "D"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "800-698-3320"
+                    },
+                    {
+                        "system": "email",
+                        "value": "kevin.gibson@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Kevin Gibson</div>",
+                    "status": "generated"
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

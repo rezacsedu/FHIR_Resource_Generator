@@ -1,0 +1,132 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-685599"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "96 Lake Ave"
+                        ],
+                        "postalCode": "74108",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "2017-07-15",
+                "gender": "female",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-172151"
+                    }
+                ],
+                "id": "smart-685599",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-685599"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Shaw",
+                        "given": [
+                            "Brenda",
+                            "C"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "brenda.shaw@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Brenda Shaw</div>",
+                    "status": "generated"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-685599-gestage"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "exam",
+                                "display": "Exam",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
+                        "text": "Exam"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "18185-9",
+                            "display": "Gestational age at birth",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "effectiveDateTime": "2017-07-15",
+                "id": "smart-685599-gestage",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-685599-gestage"
+                    }
+                ],
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-172151"
+                    }
+                ],
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-685599"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2017-07-15: Gestational age at birth = 33.9 weeks</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "wk",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "weeks",
+                    "value": 33.9
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

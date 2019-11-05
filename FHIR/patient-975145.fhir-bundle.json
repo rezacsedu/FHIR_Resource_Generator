@@ -1,0 +1,83 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-975145"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "88 Jackson Ave"
+                        ],
+                        "postalCode": "74126",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "2018-02-03",
+                "gender": "female",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-637200"
+                    }
+                ],
+                "id": "smart-975145",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-975145"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Bennett",
+                        "given": [
+                            "Laura",
+                            "J"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "800-311-7296"
+                    },
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-509-9648"
+                    },
+                    {
+                        "system": "email",
+                        "value": "laura.bennett@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Laura Bennett</div>",
+                    "status": "generated"
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

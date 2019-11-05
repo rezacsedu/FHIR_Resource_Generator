@@ -1,0 +1,78 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-320648"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "23 Ridge Ave"
+                        ],
+                        "postalCode": "74117",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1985-09-14",
+                "gender": "female",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-271692"
+                    }
+                ],
+                "id": "smart-320648",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-320648"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Davis",
+                        "given": [
+                            "Linda",
+                            "K"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-894-6865"
+                    },
+                    {
+                        "system": "email",
+                        "value": "linda.davis@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Linda Davis</div>",
+                    "status": "generated"
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

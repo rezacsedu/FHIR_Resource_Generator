@@ -1,0 +1,83 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-127578"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "98 Center St"
+                        ],
+                        "postalCode": "74108",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1961-01-27",
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-635059"
+                    }
+                ],
+                "id": "smart-127578",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-127578"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Rodgers",
+                        "given": [
+                            "Carl",
+                            "M"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "800-454-8586"
+                    },
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-347-9842"
+                    },
+                    {
+                        "system": "email",
+                        "value": "carl.rodgers@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Carl Rodgers</div>",
+                    "status": "generated"
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

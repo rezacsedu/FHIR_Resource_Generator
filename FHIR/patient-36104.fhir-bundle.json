@@ -1,0 +1,142 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-36104"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Bixby",
+                        "country": "USA",
+                        "line": [
+                            "62 Sunset St"
+                        ],
+                        "postalCode": "74008",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "2003-03-24",
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-782748"
+                    }
+                ],
+                "id": "smart-36104",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-36104"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Jackson",
+                        "given": [
+                            "Eric",
+                            "D"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "800-279-7322"
+                    },
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-558-4121"
+                    },
+                    {
+                        "system": "email",
+                        "value": "eric.jackson@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Eric Jackson</div>",
+                    "status": "generated"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-36104-gestage"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "exam",
+                                "display": "Exam",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
+                        "text": "Exam"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "18185-9",
+                            "display": "Gestational age at birth",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "effectiveDateTime": "2003-03-24",
+                "id": "smart-36104-gestage",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-36104-gestage"
+                    }
+                ],
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-782748"
+                    }
+                ],
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-36104"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-03-24: Gestational age at birth = 35.9 weeks</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "wk",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "weeks",
+                    "value": 35.9
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

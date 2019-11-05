@@ -1,0 +1,132 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-581302"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Sapulpa",
+                        "country": "USA",
+                        "line": [
+                            "84 Center St"
+                        ],
+                        "postalCode": "74066",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "2017-11-19",
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-174800"
+                    }
+                ],
+                "id": "smart-581302",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-581302"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Harris",
+                        "given": [
+                            "Brian",
+                            "Y"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "brian.harris@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Brian Harris</div>",
+                    "status": "generated"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-581302-gestage"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "exam",
+                                "display": "Exam",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
+                        "text": "Exam"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "18185-9",
+                            "display": "Gestational age at birth",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "effectiveDateTime": "2017-11-19",
+                "id": "smart-581302-gestage",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-581302-gestage"
+                    }
+                ],
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-174800"
+                    }
+                ],
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-581302"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2017-11-19: Gestational age at birth = 35.9 weeks</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "wk",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "weeks",
+                    "value": 35.9
+                }
+            }
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}
